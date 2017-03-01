@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>点亮你的智商</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+	
+</head>
+
+<body>
+<!-- 主界面 -->
+<div id="interface">
+
+	<!-- 步数 -->
+	<div id="step">
+		已用<span id="movecount">0</span>步	
+	</div>
+
+	<!-- 游戏界面 -->
+	<div id="play">
+		<table border="5" cellpadding="10" ellspacing="2" id="table"></table>
+	</div>
+		
+	<!-- 重新开始 -->
+	<a class="btn btn-lg play-again" onclick="Init(true)">重新开始</a>
+
+	<div class="interface_ribbon"></div>
+	
+	<!-- 结束界面 -->
+	<div class="result-container" id="result_container" style="display:block;">
+		<div class="rcontainer">
+			<img src="img/eva.png">
+			<p class="result" id="result"></p>
+			<a class="btn btn-lg play-again" onclick="Init(true)">再来一盘</a>
+		</div>
+	</div>
+</div>
+
+<!-- 等级界面 -->
+<div id="levels">
+	<div class="btn btn-lg level" id="level1" value="3">3×3</div>
+	<div class="btn btn-lg level" id="level2" value="4">4×4</div>
+	<div class="btn btn-lg level" id="level3" value="5">5×5</div>
+	<div class="levels_ribbon"></div>
+</div>
+
+<!-- 游戏说明 -->
+<div>
+	<button class="btn btn-lg" id="ClickMe">游戏说明</button>
+	<div id="goodcover"></div>
+	<div id="code">
+		<div class="close1"><a href="javascript:void(0)" id="closebt"><img src="img/close.gif"></a></div>
+		<div class="goodtxt">
+			<p>目标：将所有灯泡点亮</p>
+			<p>玩法：点击一个灯泡，其自身与其上下左右的灯泡同时改变状态。</p>
+		</div>
+		<div class="code-img">
+			<img src="img/instruction.png" id="ewmsrc">
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript" src="js/game.js"></script>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script language="JavaScript">
+   	draw();
+  	Init(true);
+</script>
+
+</body>
+</html>
