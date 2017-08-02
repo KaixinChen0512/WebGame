@@ -46,7 +46,7 @@ function draw() {
     for (var r = 0; r < Size; r++) { 
     	list.push("<tr>");
         for (var c = 0; c < Size; c++) {
-			list.push("<td><img src='img/on.png' onclick='Clicked("+c+","+r+")'></td>");  // ??????
+			list.push("<td><img src='img/on.png' onclick='Clicked("+c+","+r+")'></td>"); 
         }
         list.push('</tr>');
     }

@@ -174,7 +174,7 @@ body {
     -webkit-box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.2);
     -moz-box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.2);
     -ms-box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.2);
-    transform: rotate(-30deg) skew(0,0) translate(-30px,-20px);
+    transform: rotate(-30deg) skew(0,0) translate(-30px,-20px);/* skew 定义2D倾斜转换 竖X轴 正值逆时针 横Y轴正值顺时针*/
     -webkit-transform: rotate(-30deg) skew(0,0) translate(-30px,-20px);
     -moz-transform: rotate(-30deg) skew(0,0) translate(-30px,-20px);
     -ms-transform: rotate(-30deg) skew(0,0) translate(-30px,-20px);
@@ -284,7 +284,7 @@ body {
     z-index: 1001;
     -moz-opacity: 0.8;
     opacity: 0.50;
-    filter: alpha(opacity=80);
+    filter: alpha(opacity=80);/*proprietary  IE  code */
 }
 #code {
     width: 400px;
